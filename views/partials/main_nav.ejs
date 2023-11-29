@@ -1,0 +1,77 @@
+<!-- Main nav -->
+<nav class="navbar navbar-expand-lg bg-lg">
+
+    <!-- PROJECTNAME -->
+
+    <a class="navbar-brand" href="#">ChildFilix</a>
+    <!-- Hamburger -->
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <!-- Navigation Links -->
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <!-- check routes from index.js -->
+        <!-- ACTIVE ICONS IF YOU CLICK ON THEM -->
+
+        <%if (title=="Home" ){%>
+          <li class="nav-item active">
+            <%} else {%>
+          <li class="nav-item">
+            <%}%>
+              <a class="nav-link" href="/home"><i class="fas fa-home fa-spin fa-sm"></i> Home</a>
+          </li>
+
+          <%if (title=="About" ){%>
+            <li class="nav-item active">
+              <%} else {%>
+            <li class="nav-item">
+              <%}%>
+                <a class="nav-link" href="/about"><i class="fas fa-address-card fa-spin fa-sm"
+                    style="color: #82a2d9;"></i>
+                  About</a>
+            </li>
+
+            <%if (title=="Movies" ){%>
+              <li class="nav-item active">
+                <%} else {%>
+              <li class="nav-item">
+                <%}%>
+                  <a class="nav-link" href="/movies"><i class="fas fa-film fa-spin fa-sm"></i> Movies</a>
+              </li>
+
+              <%if (title=="Setting" ){%>
+                <li class="nav-item active">
+                  <%} else {%>
+                <li class="nav-item">
+                  <%}%>
+                    <a class="nav-link" href="/setting"><i class="fas fa-cog fa-spin fa-sm" style="color: #939495;"></i>
+                      Setting</a>
+                </li>
+
+                <%if (title=="Activities" ){%>
+                  <li class="nav-item active">
+                    <%} else {%>
+                  <li class="nav-item">
+                    <%}%>
+                      <a class="nav-link" href="/activities"><i class="fas fa-star fa-spin fa-sm"
+                          style="color: #fbf556;"></i>
+                        Activities</a>
+                  </li>
+
+
+                  <%if (title=="Contact" ){%>
+                    <li class="nav-item active">
+                      <%} else {%>
+                    <li class="nav-item">
+                      <%}%>
+                        <a class="nav-link" href="/contact"><i class="fas fa-phone fa-spin fa-sm"
+                            style="color: #e51f1f;"></i>
+                          Contact</a>
+                    </li>
+      </ul>
+    </div>
+  </nav>
